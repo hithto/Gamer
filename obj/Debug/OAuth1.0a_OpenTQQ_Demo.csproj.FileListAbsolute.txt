@@ -1,0 +1,10 @@
+c:\users\pc\documents\visual studio 2010\Projects\OAuth1.0a_OpenTQQ_Demo\OAuth1.0a_OpenTQQ_Demo\obj\Debug\ResolveAssemblyReference.cache
+c:\users\pc\documents\visual studio 2010\Projects\OAuth1.0a_OpenTQQ_Demo\OAuth1.0a_OpenTQQ_Demo\bin\OAuth1.0a_OpenTQQ_Demo.dll
+c:\users\pc\documents\visual studio 2010\Projects\OAuth1.0a_OpenTQQ_Demo\OAuth1.0a_OpenTQQ_Demo\bin\OAuth1.0a_OpenTQQ_Demo.pdb
+c:\users\pc\documents\visual studio 2010\Projects\OAuth1.0a_OpenTQQ_Demo\OAuth1.0a_OpenTQQ_Demo\obj\Debug\OAuth1.0a_OpenTQQ_Demo.dll
+c:\users\pc\documents\visual studio 2010\Projects\OAuth1.0a_OpenTQQ_Demo\OAuth1.0a_OpenTQQ_Demo\obj\Debug\OAuth1.0a_OpenTQQ_Demo.pdb
+C:\Users\alphea_kung\Desktop\Oauth1.0a\OAuth1.0a_OpenTQQ_Demo\bin\OAuth1.0a_OpenTQQ_Demo.dll
+C:\Users\alphea_kung\Desktop\Oauth1.0a\OAuth1.0a_OpenTQQ_Demo\bin\OAuth1.0a_OpenTQQ_Demo.pdb
+C:\Users\alphea_kung\Desktop\Oauth1.0a\OAuth1.0a_OpenTQQ_Demo\obj\Debug\OAuth1.0a_OpenTQQ_Demo.csprojResolveAssemblyReference.cache
+C:\Users\alphea_kung\Desktop\Oauth1.0a\OAuth1.0a_OpenTQQ_Demo\obj\Debug\OAuth1.0a_OpenTQQ_Demo.dll
+C:\Users\alphea_kung\Desktop\Oauth1.0a\OAuth1.0a_OpenTQQ_Demo\obj\Debug\OAuth1.0a_OpenTQQ_Demo.pdb
