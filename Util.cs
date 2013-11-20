@@ -63,7 +63,7 @@ namespace OAuth1._0a_OpenTQQ_Demo
             string BaseString = method + "&" + RFC3986_UrlEncode(url) + "&";
             Paras = RFC3986_UrlEncode(dic.OrderBy(x => x.Key).ToDictionary(x => x.Key, y => y.Value).ToQueryString());
             BaseString += Paras;
-
+            Console.Write(oauth_token_secret);
             using (HMACSHA1 crypto = new HMACSHA1())
             {
                 crypto.Key = Encoding.ASCII.GetBytes(HashKey);
