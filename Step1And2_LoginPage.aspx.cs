@@ -17,6 +17,7 @@ namespace OAuth1._0a_OpenTQQ_Demo
                 string RequestUrl = "http://api.gamer.com.tw/oauth/oauth_requestToken.php";
                 string oauth_signature = "";
                 string result = "";
+                string[] RstArray;
 
                 //Step1,構造請求獲取未授權的RequestToken
                 Dictionary<string, string> Paras = new Dictionary<string, string>();
@@ -38,7 +39,7 @@ namespace OAuth1._0a_OpenTQQ_Demo
                 Paras.Add("oauth_signature", Util.RFC3986_UrlEncode(oauth_signature));
 
                 result = Util.HttpGet(RequestUrl + "?" + Paras.ToQueryString());
-                string[] RstArray = result.Split('&');
+                RstArray = result.Split('&');
 
                 //string token = "";
                 //   string tokensecret = "";
@@ -47,7 +48,7 @@ namespace OAuth1._0a_OpenTQQ_Demo
                 //  Session["oauth_token_secret"] = result.Split('&')[1].Split('=')[1];
 
                 //Step2,使用未授權的RequestToken作為Get參數跳轉到授權頁面
-                Response.Redirect("http://api.gamer.com.tw/oauth/oauth_confirm.php?" + result.ToString());
+                Response.Redirect("http://api.gamer.com.tw/oauth/oauth_confirm.php?" + RstArray[0] + "&" + RstArray[1] + "&" + RstArray[2]);
             }
         }
     }
