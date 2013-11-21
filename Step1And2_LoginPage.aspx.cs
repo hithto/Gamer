@@ -45,17 +45,10 @@ namespace OAuth1._0a_OpenTQQ_Demo
                 Session["oauth_token_secret"] = result.Split('&')[1].Split('=')[1];
                 //  Session["oauth_token_secret"] = result.Split('&')[1].Split('=')[1];
 
-                //Session["oauth_token_secret"] = FilterEqual(Session["oauth_token_secret"].ToString());
 
                 //Step2,使用未授權的RequestToken作為Get參數跳轉到授權頁面
                 Response.Redirect("http://api.gamer.com.tw/oauth/oauth_confirm.php?" + result.ToString());
             }
-        }
-        protected string FilterEqual(string Input)
-        {
-            int iPos = Input.IndexOf("=");
-            if (iPos >= 0) return Input.Substring(iPos + 1, Input.Length - iPos - 1);
-            else return Input;
         }
     }
 }

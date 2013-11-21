@@ -46,9 +46,9 @@ namespace OAuth1._0a_OpenTQQ_Demo
             //   string tokensecret = "";
 
 
-            Session["oauth_token"] = result.Split('&')[0];
-            Session["oauth_token_secret"] = result.Split('&')[1];
-            Session["xoauth_baha_userid"] = result.Split('&')[2];
+            Session["oauth_token"] = result.Split('&')[0].Split('=')[1];
+            Session["oauth_token_secret"] = result.Split('&')[1].Split('=')[1];
+            Session["xoauth_baha_userid"] = result.Split('&')[2].Split('=')[1];
             Session["openid"] = openid;
 
             message = string.Format("oauth_token:{0}<br />oauth_token_secret:{1}<br />openid:{2}", Session["oauth_token"], Session["oauth_token_secret"], Session["xoauth_baha_userid"]);
