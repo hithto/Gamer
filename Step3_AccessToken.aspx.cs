@@ -16,10 +16,10 @@ namespace OAuth1._0a_OpenTQQ_Demo
             string RequestUrl = "http://api.gamer.com.tw/oauth/oauth_accessToken.php";
             string oauth_signature = "";
             string result = "";
-            Session["oauth_token_secret"].ToString();
+
             string oauth_token = Request.QueryString["oauth_token"];
             string oauth_verifier = Request.QueryString["oauth_verifier"];
-            string openid = Request.QueryString["openid"];//必須留著和之後獲得的AccessToken持久化存儲，因為是示例就暫時保存到Session中了
+            string openid = Request.QueryString["xoauth_baha_userid"];//必須留著和之後獲得的AccessToken持久化存儲，因為是示例就暫時保存到Session中了
             //string openkey = Request.QueryString["openkey"];//沒什麼用，是另外一套授權體系的
 
             Dictionary<string, string> Paras = new Dictionary<string, string>();
@@ -46,11 +46,12 @@ namespace OAuth1._0a_OpenTQQ_Demo
             //   string tokensecret = "";
 
 
-            Session["oauth_token"] = RstArray[0].Split('&')[1];
-            Session["oauth_token_secret"] = RstArray[1].Split('&')[1];
+            Session["oauth_token"] = result.Split('&')[0];
+            Session["oauth_token_secret"] = result.Split('&')[1];
+            Session["xoauth_baha_userid"] = result.Split('&')[2];
             Session["openid"] = openid;
 
-            message = string.Format("oauth_token:{0}<br />oauth_token_secret:{1}<br />openid:{2}", Session["oauth_token"], Session["oauth_token_secret"], openid);
+            message = string.Format("oauth_token:{0}<br />oauth_token_secret:{1}<br />openid:{2}", Session["oauth_token"], Session["oauth_token_secret"], Session["xoauth_baha_userid"]);
         }
     }
 }

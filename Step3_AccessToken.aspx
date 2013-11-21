@@ -19,7 +19,10 @@
     <li><%=Request.QueryString["oauth_token"].ToString() %></li>
    <li> <%=Request.QueryString["oauth_verifier"].ToString() %></li>
     <li><%=Request.QueryString["xoauth_allow"].ToString() %></li>
+    <li><%=Session["oauth_token"].ToString() %></li>
     <li><%=Session["oauth_token_secret"].ToString() %></li>
+   <li><%=Session["xoauth_baha_userid"].ToString() %></li>
+
   </ul>
 <ul>
     <li>APPKey</li>
